@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>IVL Rulebook</title>
+<!-- 2021-03-28 Sun 23:03 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Org-mode">
+<meta name="author" content="Italian Volleyball League">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script>
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-3 col-md-push-9"><nav id="table-of-contents">
+<div id="text-table-of-contents" class="bs-docs-sidebar">
+<ul class="nav">
+<li><a href="#sec-1">1. Calendar and Match scheduling</a>
+<ul class="nav">
+<li><a href="#sec-1-1">1.1. Match Scheduling</a></li>
+<li><a href="#sec-1-2">1.2. Couples Division</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Postpone / Anticipate a match</a></li>
+<li><a href="#sec-3">3. Match</a>
+<ul class="nav">
+<li><a href="#sec-3-1">3.1. Showing up to the match</a></li>
+<li><a href="#sec-3-2">3.2. Playing the match</a></li>
+<li><a href="#sec-3-3">3.3. Lag and Check</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Rankings</a>
+<ul class="nav">
+<li><a href="#sec-4-1">4.1. Example</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Final Phases</a></li>
+<li><a href="#sec-6">6. Team/Couple Withdradwal</a></li>
+<li><a href="#sec-7">7. Free agents</a>
+<ul class="nav">
+<li><a href="#sec-7-1">7.1. Freecard</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div><div class="col-md-9 col-md-pull-3"><h1 class="title">IVL Rulebook</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Calendar and Match scheduling</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The league will start <b><b>March 29th</b></b> and will end around the <b><b>first week of June</b></b>. A total of <b><b>18</b></b> rounds will be played (teams will play each others twice)
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Match Scheduling</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Every team will play against any other team twice (home and away).
+</p>
+
+<p>
+<b><b>2 rounds</b></b> will be played every week (every team will play 2 other teams), every two weeks there will be a &rsquo;&rsquo;short week&rsquo;&rsquo; with only 1 round. 
+In detail:
+</p>
+<ul class="org-ul">
+<li>Month 29/03-25/04: 2 rounds + 2 rounds + 1 round + 2 rounds
+</li>
+<li>Month 26/04-23/05: 2 rounds + 2 rounds + 1 round + 2 rounds
+</li>
+<li>Month 24/05-06/06: 2 rounds + 2 rounds
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Couples Division</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Every team is <b><b>REQUIRED</b></b> to show up with a couple at the designed day/time and in the specified room.  
+</p>
+
+<p>
+It is not required to speficy which of the two couples will play that day, all is needed is that the couple show up in time in the room.
+</p>
+
+<p>
+The couples must be registered in #sign-up, it is not allowed to trade players between the couples of the teams.
+</p>
+</div>
+
+<div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Example 1</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+On &rsquo;Round 1&rsquo; (March 29-30) it is specified on the schedule:
+</p>
+
+<p>
+Team3 vs Team5 at 21:30 in ROOM1
+</p>
+
+<p>
+If Team3 is made of couples <b><b>A</b></b> and <b><b>B</b></b> and Team5 is made of couples <b><b>C</b></b> and <b><b>D</b></b>, then the games will be:
+</p>
+
+<p>
+<b><b>Thursday 08/04</b></b> - Couple <b><b>A</b></b> vs Couple <b><b>C</b></b> at <b><b>21:30</b></b> in <b><b>ROOM1</b></b>
+</p>
+
+<p>
+<b><b>Friday 09/04</b></b> - Couple <b><b>B</b></b> vs Couple <b><b>D</b></b> at <b><b>21:30</b></b> in <b><b>ROOM1</b></b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> Example 2</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+On &rsquo;Round 4&rsquo; (April 08-09) it is specified on the schedule:
+</p>
+
+<p>
+Team3 vs Team9 at 22:30 in ROOM2
+</p>
+
+<p>
+If Team3 is made of couples <b><b>A</b></b> and <b><b>B</b></b> and Team9 is made of couples <b><b>N</b></b> and <b><b>M</b></b>, then the games will be:
+</p>
+
+<p>
+<b><b>Thursday 08/04</b></b> - Couple <b><b>A</b></b> vs Couple <b><b>N</b></b> at <b><b>22:30</b></b> in <b><b>ROOM2</b></b>
+</p>
+
+<p>
+<b><b>Friday 09/04 - Couple **B</b></b> vs Couple <b><b>M</b></b> at <b><b>22:30</b></b> in <b><b>ROOM2</b></b>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Postpone / Anticipate a match</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Depending on one&rsquo;s needs, it is possible to pospone or anticipate a match (considering the above example, you could change the schedule of the single match A V C or both matches as well).
+</p>
+
+<p>
+To do so, you need to find an agreement, <b><b>in private</b></b>, with the opponents, and only then leave a message in the #postpone-and-anticipate-match channel pinging the @Referee role.
+</p>
+
+<p>
+<b><b>How much time do you have to tell the @Referee about the schedule change?</b></b>
+</p>
+<ul class="org-ul">
+<li>In case of postponement —&gt; 1h30m before the original time
+</li>
+<li>In case of anticipation —&gt; 1h30 before the new agreed time
+</li>
+</ul>
+
+<p>
+You can postpone/anticipate for no more than <b><b>3 days</b></b> (unless there&rsquo;s exceptional motivation to communicate to the @league admins).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Match</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Showing up to the match</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+It is required to show up on time in the room at the given time. 
+</p>
+
+<p>
+A player can be at max <b><b>15 minutes late</b></b>, after which the refree will give <b><b>DEFWIN</b></b> (Default 2-0, 7-0 7-0 win) to the team that regularly showed up.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Playing the match</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+It is <b><b>required</b></b> playing in our rooms (#link-room) and an official @Referee needs to be present.
+</p>
+
+<p>
+The couple to reach <b><b>7 points</b></b> first will win <b><b>1 set</b></b> (no advantage)
+</p>
+
+<p>
+The first couple to win <b><b>2 sets</b></b> will win the match.
+</p>
+
+<p>
+The match will be considered <b><b>regularly played</b></b> only if a replay was recorded and if the two couples have played the match fully, without leaving the room.
+</p>
+
+<p>
+In case of a player or a couple leaving a <b><b>DEFWIN</b></b> will be awarded to the opponents.
+</p>
+
+<p>
+If the match is unplayable because of lag from one or more players, the designated @Referee can decide to suspend the match and pospone it; the couples will be free to agree to postpone the match following the rules above in <b><b>Postponing/anticipating a match</b></b>, or finding an agreement with the referee in room to play later (es: 30m/1h/2h later).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Lag and Check</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+In case of obvious lag, the @Referee can spontaneously decide to replay the point and take the point away from the team who had scored.
+</p>
+
+<p>
+In case the lag is not obvious is nto evident to the @Referee, it is possible, <b><b>once the play is over</b></b>, to ask for a Check.
+</p>
+
+<p>
+The Check consists of sending a screenshot in the #screen-check channel, in which it&rsquo;s visible the <b><b>ping graph (the graph with the ping on the left of the chat), the map and the players, the score of the match and the date/time of the pc.</b></b>
+</p>
+
+<p>
+At this point, the @Referee will decide if they want to give the Check and replay the action (taking away the point) or validate it and restart the match.  
+</p>
+
+<p>
+In case the Check is validated, the team will be awarded <b><b>another Check during the set</b></b>, otherwise <b><b>it can&rsquo;t be called for the rest of the set</b></b>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Rankings</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+In the general rankings you will find the <b><b>10 teams</b></b> (NOT couples) ordered by points earned. 
+</p>
+
+<p>
+The points will be assigned <b><b>separately</b></b> to the two couples based on the results of their match, and then <b><b>summed</b></b>.
+</p>
+
+<p>
+In case of parity of points, the following critieria will apply:
+</p>
+
+<ol class="org-ol">
+<li>Wins
+</li>
+<li>Set won
+</li>
+<li>Set Difference
+</li>
+<li>Points for
+</li>
+<li>Points Difference
+</li>
+</ol>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Example</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Team FASSA BORTOLO: og-pac and Dangerxx-lelouch
+</p>
+
+<p>
+The couple og-pac WINS the match against the opponent couple <b><b>2-0</b></b> and earns <b><b>3 points</b></b> 
+</p>
+
+<p>
+The couple Dangerxx-lelouch LOSES the match against the opponent couple <b><b>1-2</b></b> and earns <b><b>1 point</b></b>
+</p>
+
+<p>
+The team FASSA BORTOLO will have earned a total of <b><b>4 points (3+1)</b></b>, <b><b>3 set wins (2+1)</b></b> and <b><b>2 lost sets (0+2)</b></b>  
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Final Phases</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+The Final Phases will be played at the end of the regular season schedule and the <b><b>first 4 classified teams</b></b> will play.
+</p>
+
+<p>
+It consists in a knock-out mini-tournament (semifinals and finals) played in 1 or 2 days. 
+</p>
+
+<p>
+In those matches the couples will NOT be separated anymore: There will be a <b><b>single match</b></b> in which substitutions are accepted and whichever couple formed from the 4 players of the teams can play. 
+</p>
+
+<p>
+<b><b>Every player</b></b> will however be <b><b>Required</b></b> to play at least <b><b>1 full set</b></b>
+</p>
+
+<p>
+The first team to reach 7 points (no advantages for the semi-finals, with advantages for the final) will win <b><b>1 set</b></b>, the first team to reach <b><b>3 sets</b></b> wins will win the match.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Team/Couple Withdradwal</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+In case of a couple withdrawing from the tournament, the other couple of the team can call 2 substituting players within <b><b>2 rounds</b></b>.
+</p>
+
+<p>
+Otherwise, <b><b>every match</b></b> the whitdrawing couple <b><b>has played</b></b> or <b><b>would have played</b></b> will be considered <b><b>DEFLOSS</b></b> (2-9, 7-0 7-0), while the other couple can keep playing <b><b>their matches</b></b> (WILL NOT be able to play the games that the whitdrawng team was supposed to play).
+</p>
+
+<p>
+If the entire team (both couples) whitrdaws from the league, the @League admin will propose the Free agents first and eventually unregistered players later, to form a new team that will keep the results and the ranking of the whitdrawing team.
+</p>
+
+<p>
+In case a new team cannot be formed, <b><b>every match</b></b> played or to play of the whitdrawing team  will be considered <b><b>DEFLOSS</b></b> (2-0, 7-0 7-0)   
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Free agents</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Free agents are the players registered to the league but that do not have a team.
+</p>
+
+<p>
+They will have the chance to substitute a player who has a team ONLY if there is one of those conditions:
+</p>
+<ul class="org-ul">
+<li>1 or more players of a team withdraws
+</li>
+<li>1 or more players of a team are disqualified
+</li>
+</ul>
+
+<p>
+The whithdrawal of a player will be official when his <b><b>absence/unavailability</b></b> or <b><b>uninterest</b></b> are proved through screenshots to the @League admins.
+</p>
+
+<p>
+There is no specific number of days after which the whithdrawal is automatically given: the admins will consider every situation.
+</p>
+
+<p>
+A player who whithdraws or is disqualified CANNOT re-enter the league, therefore they will not be able to register as a Free agent either.
+</p>
+
+<p>
+It is possible to for a team to pick a Free agent registered from <b><b>at least 2 weeks</b></b> or from a week earlier than the start of the league (<b><b>29/03</b></b>).
+</p>
+
+<p>
+Once picked, the Free agent <b><b>must join the team that called him</b></b> and to do so within 3 days, penalty being the exclusion from the league.
+</p>
+</div>
+
+<div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Freecard</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+The freecard allows a Free agent to substitute an absent player for <b><b>only a single match</b></b>
+</p>
+
+<p>
+Every team will have <b><b>1</b></b> Freecard to use for the first half of the season (the first 9 matches) and <b><b>1</b></b> Freecard for the second half (the last 9 matches).
+</p>
+
+<p>
+Before being able to use it, it is needed to prove the absence/uninterest of the player to the @League admins through screenshots.
+</p>
+
+<p>
+The Free agent called up through Freecard <b><b>WILL NOT</b></b> be able to be called up again from said team for the rest of the league (for example, in case the absence of the player continues after the match.)
+</p>
+</div>
+</div>
+</div>
+</div></div></div>
+</body>
+</html>
